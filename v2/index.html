@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ing. José Manuel Maldonado Roldán · Director de Obra · Project Management</title>
+<meta name="description" content="">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0e1a2b">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav glass" id="nav">
+  <a href="#inicio" class="brand"><span class="mono" data-f="iniciales"></span><span data-f="nombreCorto"></span></a>
+  <nav><a href="#sobre" data-i="perfil"></a><a href="#experiencia" data-i="experiencia"></a><a href="#proyectos" data-i="proyectos"></a><a href="#especialidades" data-i="especialidades"></a><a href="#formacion" data-i="formacion"></a><a href="#contacto" class="nav-cta" data-i="contacto"></a></nav>
+  <div class="lang" role="group" aria-label="Idioma / Language"><button data-l="es">ES</button><i>|</i><button data-l="en">EN</button></div>
+  <button class="burger" aria-label="Menú"><span></span><span></span></button>
+</header>
+
+<!-- 1. HERO: imagen enmascarada por el monograma MM que crece con el scroll -->
+<div class="hero-track" id="inicio">
+  <section class="hero" id="hero">
+    <div class="mask-layer" id="maskLayer"><div class="mask-img" style="background-image:url(../img/hero.jpg)"></div></div>
+    <div class="hero-shade" id="heroShade"></div>
+    <div class="hero-intro" id="heroIntro">
+      <p class="eyebrow" data-f="titulo"></p>
+      <div class="scroll-cue"><span class="wheel" id="arrow"></span><small data-i="desliza"></small></div>
+    </div>
+    <div class="hero-text" id="heroText">
+      <p class="eyebrow" data-f="titulo"></p>
+      <h1 data-f="nombre"></h1>
+      <p class="tag" data-f="tagline"></p>
+      <div class="btns"><a class="btn solid" id="cvBtn" href="#proyectos"></a><a class="btn line" href="#contacto" data-i="contacto"></a></div>
+    </div>
+  </section>
+</div>
+
+<!-- 2. MANIFIESTO pinneado letra por letra -->
+<section class="manifest" id="sobre">
+  <div class="wrap">
+    <p class="num">01 · <span data-i="sobreT"></span></p>
+    <p class="main-text" id="mainText" data-f="sobre1"></p>
+  </div>
+</section>
+
+<section class="sec about">
+  <div class="wrap two">
+    <div class="glass-card reveal"><p data-f="sobre2"></p></div>
+    <ul class="facts reveal" id="facts"></ul>
+  </div>
+</section>
+
+<section class="stats"><div class="wrap grid4" id="stats"></div></section>
+
+<!-- 3. EXPERIENCIA: pasos con reveal 3D -->
+<section class="sec" id="experiencia">
+  <div class="wrap"><p class="num">02</p><h2 class="split-h" data-i="expT"></h2>
+    <ol class="steps" id="timeline"></ol></div>
+</section>
+
+<!-- 4. PROYECTOS + ilustración SVG que se ensambla -->
+<section class="sec dark" id="proyectos">
+  <div class="wrap">
+    <div class="proj-head">
+      <div><p class="num">03</p><h2 class="split-h" data-i="proyT"></h2><p class="pnote" data-i="proyNota"></p></div>
+      <svg class="build" id="build" viewBox="0 0 420 300" aria-hidden="true">
+        <g id="g-ground"><rect x="10" y="270" width="400" height="6" fill="#8fb3d9"/></g>
+        <g id="g-col1"><rect x="70" y="120" width="14" height="150" fill="#c4d7ec"/></g>
+        <g id="g-col2"><rect x="200" y="120" width="14" height="150" fill="#c4d7ec"/></g>
+        <g id="g-col3"><rect x="330" y="120" width="14" height="150" fill="#c4d7ec"/></g>
+        <g id="g-beam"><rect x="56" y="108" width="302" height="14" fill="#8fb3d9"/></g>
+        <g id="g-roof"><polygon points="50,108 207,50 364,108" fill="none" stroke="#c4d7ec" stroke-width="6" stroke-linejoin="round"/></g>
+        <g id="g-truss"><path d="M84 270 L200 122 M214 270 L330 122 M84 122 L200 270 M214 122 L330 270" stroke="#2f5f8f" stroke-width="4"/></g>
+        <g id="g-crane"><path d="M390 270 V20 H250 M390 20 L360 50 M300 20 V70" stroke="#8fb3d9" stroke-width="4" fill="none"/><rect x="290" y="70" width="20" height="14" fill="#c4d7ec"/></g>
+      </svg>
+    </div>
+    <div class="projects" id="projects"></div></div>
+</section>
+
+<!-- 5. ESPECIALIDADES: tarjetas que giran en 3D -->
+<section class="sec" id="especialidades">
+  <div class="wrap"><p class="num">04</p><h2 class="split-h" data-i="espT"></h2>
+    <div class="flips" id="skills"></div>
+    <h3 class="sub" data-i="tools"></h3><div class="chips" id="tools"></div></div>
+</section>
+
+<section class="sec concrete" id="formacion">
+  <div class="wrap two">
+    <div><p class="num">05</p><h2 class="split-h" data-i="formT"></h2></div>
+    <ul class="edu" id="edu"></ul>
+  </div>
+</section>
+
+<section class="sec dark contact" id="contacto">
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <div class="wrap"><p class="num">06</p><h2 class="split-h" data-i="contT"></h2>
+    <div class="cgrid" id="contact"></div></div>
+</section>
+
+<footer class="foot"><div class="wrap">
+  <span>© <span id="yr"></span> <span data-f="nombre"></span></span>
+  <span><span data-i="por"></span> <strong>Eduardo García Soluciones</strong></span>
+</div><p class="credits wrap" data-i="credits"></p></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
